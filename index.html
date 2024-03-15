@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire d'analyse des réponses</title>
+</head>
+<body>
+  <h1>Formulaire d'analyse des réponses</h1>
+  <form action="submit.php" method="post">
+    <h2>Projets en cours et vision de l’interopérabilité</h2>
+    <p>1. Quels sont vos projets prioritaires du moment ? (obligatoire)<br>
+    <textarea name="projets_prioritaires" rows="4" cols="50"></textarea></p>
+    <p>2. Rencontrez-vous des problématiques concrètes à leur mise en place ? (facultative)<br>
+    <textarea name="problematiques_mise_en_place" rows="4" cols="50"></textarea></p>
+    <p>3. Jugez-vous une interopérabilité sur certaines briques à l’échelle nationale pertinente ? (obligatoire)<br>
+    <textarea name="interop_nationale_pertinente" rows="4" cols="50"></textarea></p>
+    <p>4. Comment imaginez-vous le futur (dans 10 ans) de la distribution ? (facultative)<br>
+    <textarea name="futur_distribution" rows="4" cols="50"></textarea></p>
+
+    <h2>Brique n° 1 : Référentiel des offres</h2>
+    <p>5. Rencontrez-vous des difficultés sur votre référentiel des offres sur votre territoire ? (obligatoire)<br>
+    <input type="radio" name="difficultes_referentiel" value="Oui"> Oui
+    <input type="radio" name="difficultes_referentiel" value="Non"> Non</p>
+    <p>- Si oui, lesquelles ?<br>
+    <textarea name="difficultes_referentiel_details" rows="4" cols="50"></textarea></p>
+    <p>6. Avez-vous des projets sur ce sujet dans les mois à venir ? (obligatoire)<br>
+    <input type="radio" name="projets_referentiel" value="Oui"> Oui
+    <input type="radio" name="projets_referentiel" value="Non"> Non</p>
+    <p>- Si oui, lesquels ?<br>
+    <textarea name="projets_referentiel_details" rows="4" cols="50"></textarea></p>
+
+    <!-- Autres questions à insérer ici -->
+
+    <h2>Pour terminer : Classement des briques</h2>
+    <p>39. Pouvez-vous les classer par ordre d’importance (1=très intéressant à traiter de manière collective à l’échelle nationale afin de trouver des solutions communes)<br>
+    <textarea name="classement_briques" rows="4" cols="50"></textarea></p>
+    <p>40. Manque-t-il des briques ? si oui lesquelles (facultative)<br>
+    <textarea name="briques_manquantes" rows="4" cols="50"></textarea></p>
+    <p>41. Sur quelles briques seriez-vous le plus intéressé de travailler pendant l’atelier du 8 avril ? (obligatoire)<br>
+    <textarea name="interet_travail_atelier" rows="4" cols="50"></textarea></p>
+
+    <input type="submit" value="Soumettre">
+  </form>
+</body>
+</html>
